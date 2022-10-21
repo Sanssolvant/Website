@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title id="titel">meine Projekte</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="shortcut icon" href="images/icon/mstile-310x310.png" />
+		<link rel="icon" href="images/icon/mstile-310x310.png" />
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="logo-logo-name">
+				<a href="index.html">
+					<div id="logo">ZT</div>
+				</a>
+
+				<a href="index.html">
+					<div id="logo-name">
+						<span id="Zinedine">Zinedine</span> <br />Tomasella
+					</div>
+				</a>
+			</div>
+
+			<div class="nav-bar-container">
+				<a href="index.html" class="nav-bar">Startseite</a>
+				<a href="kontakt.html" class="nav-bar">Kontakt</a>
+				<a href="übermich.html" class="nav-bar">Über mich</a>
+				<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+
+				<div class="dropdown">
+					<img
+						class="nav-bar"
+						src="images/icon/globus2.png"
+						alt="language"
+						onclick="myFunction()"
+					/>
+					<div class="dropdown-content" id="myDropdown">
+						<div class="first-language">
+							<a href="#de" data-reload onclick="reloadPage()">DE-Deutsch</a>
+							<img
+								class="germany"
+								src="images/icon/germany.png"
+								alt="Germany"
+							/>
+						</div>
+						<div class="second-language">
+							<a href="#en" data-reload onclick="reloadPage()">EN-English</a>
+							<img
+								class="united-kingdom"
+								src="images/icon/england.png"
+								alt="United Kingdom"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main id="main-meineProjekte">
+			<div class="slider">
+				<div class="slide active">
+					<div class="info">
+						<h1 class="meineProjekte-text-title">Viergewinnt</h1>
+
+						<div class="meineProjekte-text">
+							<span class="viergewinnt-text">
+								Das klassische Viergewinnt Spiel.
+							</span>
+							<br />
+							<span class="spieler">(2 Spieler)</span>
+						</div>
+
+						<a href="images/download/Vier-Gewinnt.jar" download>
+							<span class="herunterladen">Herunterladen</span>
+						</a>
+
+						<img
+							class="java-logo"
+							src="images/logos/java-neu.png"
+							alt="java logo"
+						/>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="info">
+						<h1 class="meineProjekte-text-title">Bankomat</h1>
+
+						<div class="meineProjekte-text">
+							<span class="bankomat-text"
+								>Eine Mischung aus Geldautomat und E-Banking.</span
+							>
+							<br />
+							<span class="mysql">(Verbunden mit einer MySql-Datenbank)</span>
+						</div>
+
+						<a href="images/download/Bankomat.jar" download>
+							<span class="herunterladen">Herunterladen</span>
+						</a>
+
+						<img
+							class="java-logo"
+							src="images/logos/java-neu.png"
+							alt="java logo"
+						/>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="info">
+						<h1 class="meineProjekte-text-title">Umrechner</h1>
+
+						<div class="meineProjekte-text">
+							<span class="umrechner-text"
+								>Ein Konverter von/nach Hexadezimal, Binär und Dezimal.</span
+							>
+							<br />
+							<br />
+						</div>
+
+						<a href="images/download/Umrechner.jar" download>
+							<span class="herunterladen">Herunterladen</span>
+						</a>
+
+						<img
+							class="java-logo"
+							src="images/logos/java-neu.png"
+							alt="java logo"
+						/>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="info">
+						<h1 class="meineProjekte-text-title">Zeitmesser</h1>
+
+						<div class="meineProjekte-text">
+							<span class="zeitmesser-text"
+								>Misst, wie lange ein Programm geöffnet ist.</span
+							>
+							<br />
+							<br />
+						</div>
+
+						<a href="images/download/ProgrammDauerMessen.jar" download>
+							<span class="herunterladen">Herunterladen</span>
+						</a>
+
+						<img
+							class="java-logo"
+							src="images/logos/java-neu.png"
+							alt="java logo"
+						/>
+					</div>
+				</div>
+
+				<div class="slide">
+					<div class="info">
+						<h1 class="meineProjekte-text-title">Webseite</h1>
+
+						<div class="meineProjekte-text">
+							<span class="webseite-text"
+								>Die Website, auf der Sie sich gerade befinden, wurde von mir
+								selbst erstellt,</span
+							>
+							<br />
+							<span class="standard-language"
+								>unter Verwendung der Standardsprachen</span
+							>
+							<span class="hsj">HTML/CSS/Javascript und PHP.</span>
+						</div>
+
+						<img
+							class="java-logo"
+							src="images/logos/website-language.png"
+							alt="java logo"
+						/>
+					</div>
+				</div>
+
+				<div class="navigation">
+					<i class="fas fa-chevron-left prev-btn"></i>
+					<i class="fas fa-chevron-right next-btn"></i>
+				</div>
+				<div class="navigation-visibility">
+					<div class="slide-icon active"></div>
+					<div class="slide-icon"></div>
+					<div class="slide-icon"></div>
+					<div class="slide-icon"></div>
+					<div class="slide-icon"></div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<a class="socials" href="https://github.com/Sanssolvant/Projects"
+				><i class="fa-brands fa-github" aria-hidden="true"></i>&nbsp; Github</a
+			>
+			<div class="background">
+				<div class="copyright">© 2022 Zinedine Tomasella</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="Javascript/meineProjekte.js"></script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title id="titel">Kontakt</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="shortcut icon" href="images/icon/mstile-310x310.png" />
+		<link rel="icon" href="images/icon/mstile-310x310.png" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="logo-logo-name">
+				<a href="index.html">
+					<div id="logo">ZT</div>
+				</a>
+
+				<a href="index.html">
+					<div id="logo-name">
+						<span id="Zinedine">Zinedine</span> <br />Tomasella
+					</div>
+				</a>
+			</div>
+
+			<div class="nav-bar-container">
+				<a href="index.html" class="nav-bar">Startseite</a>
+				<a href="kontakt.html" class="nav-bar">Kontakt</a>
+				<a href="übermich.html" class="nav-bar">Über mich</a>
+				<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+
+				<div class="dropdown">
+					<img
+						class="nav-bar"
+						src="images/icon/globus2.png"
+						alt="language"
+						onclick="myFunction()"
+					/>
+					<div class="dropdown-content" id="myDropdown">
+						<div class="first-language">
+							<a href="#de" data-reload onclick="reloadPage()">DE-Deutsch</a>
+							<img
+								class="germany"
+								src="images/icon/germany.png"
+								alt="Germany"
+							/>
+						</div>
+						<div class="second-language">
+							<a href="#en" data-reload onclick="reloadPage()">EN-English</a>
+							<img
+								class="united-kingdom"
+								src="images/icon/england.png"
+								alt="United Kingdom"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main id="main">
+			<div class="main-kontakt">
+				<div class="contact-section">
+					<div class="contact-info">
+						<div>
+							<i class="fa-solid fa-location-dot"></i>Gasterweg 33, Uznach,
+							Switzerland
+						</div>
+						<div>
+							<i class="fa-solid fa-envelope"></i>zinedine.tomasella@hispeed.ch
+						</div>
+						<div><i class="fa-solid fa-phone"></i>+41 78 8052404</div>
+					</div>
+
+					<div id="alert-success">
+						<span>Nachricht gesendet! Danke fürs Kontaktieren</span>
+					</div>
+					<div id="alert-error">
+						<span>Etwas ist schief gelaufen! Bitte versuche es erneut.</span>
+					</div>
+
+					<div class="contact-form">
+						<h1>Kontaktiere mich</h1>
+						<form class="contact">
+							<input
+								type="text"
+								name="name"
+								class="text-box-name"
+								placeholder="Name"
+								spellcheck="false"
+								required
+							/>
+
+							<input
+								type="text"
+								name="mail"
+								class="text-box-email"
+								placeholder="Email"
+								spellcheck="false"
+								required
+							/>
+
+							<input
+								type="text"
+								name="subject"
+								class="text-box-subject"
+								placeholder="Thema"
+								spellcheck="false"
+								required
+							/>
+
+							<textarea
+								name="message"
+								rows="5"
+								class="text-box-message"
+								placeholder="Nachricht"
+								spellcheck="false"
+								required
+							></textarea>
+
+							<button type="submit" name="submit" class="send-btn">
+								Senden
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<a class="socials" href="https://github.com/Sanssolvant/Projects"
+				><i class="fa-brands fa-github" aria-hidden="true"></i>&nbsp; Github</a
+			>
+			<div class="background">
+				<div class="copyright">© 2022 Zinedine Tomasella</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="Javascript/kontakt.js"></script>
+</html>
