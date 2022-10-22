@@ -21,14 +21,14 @@ app.post("/", (req, res) => {
 		port: 587,
 		secure: false,
 		auth: {
-			user: "zinedine.tomasella@hispeed.ch",
-			pass: "etuensla",
+			user: process.env.EMAIL,
+			pass: process.env.PASSWORD,
 		},
 	});
 
 	const mailOptions = {
 		from: req.body.email,
-		to: "zinedine.tomasella@hispeed.ch",
+		to: process.env.EMAIL,
 		subject: `Message from ${req.body.email}: ${req.body.subject}`,
 		text: req.body.message,
 	};
