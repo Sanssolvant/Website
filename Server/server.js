@@ -21,8 +21,8 @@ app.post("/", (req, res) => {
 		port: 587,
 		secure: false,
 		auth: {
-			user: process.env.EMAIL,
-			pass: process.env.PASSWORD,
+			user: "zinedine.tomasella@hispeed.ch",
+			pass: "etuensla",
 		},
 	});
 
