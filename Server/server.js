@@ -18,7 +18,7 @@ app.post("/", (req, res) => {
 
 	const transporter = nodemailer.createTransport({
 		host: "smtp.hispeed.ch",
-		port: "587",
+		port: 587,
 		secure: false,
 		auth: {
 			user: process.env.EMAIL,
