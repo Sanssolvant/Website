@@ -32,7 +32,6 @@ app.post("/", (req, res) => {
 		auth: {
 			type: "OAuth2",
 			user: process.env.EMAIL,
-			pass: process.env.PASSWORD,
 			clientId: process.env.CLIENTID,
 			clientSecret: process.env.CLIENTKEY,
 			refreshToken: process.env.REFRESHTOKEN,
