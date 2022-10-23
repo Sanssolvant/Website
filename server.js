@@ -2,8 +2,7 @@ const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
-const dotenv = require("dotenv");
-dotenv.config();
+require("dotenv").config({ path: __dirname + "/./../../.env" });
 
 const PORT = process.env.PORT || 10000;
 
