@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 
 const PORT = process.env.PORT || 10000;
 
@@ -27,6 +28,7 @@ app.post("/", (req, res) => {
 
 	const transporter = nodemailer.createTransport({
 		host: "smtp.gmail.com",
+		service: "gmail",
 		port: 465,
 		secure: true,
 		auth: {
