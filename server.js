@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 require("dotenv").config();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 const oAuth2Client = new google.auth.OAuth2(
 	process.env.CLIENTID,
