@@ -39,6 +39,13 @@ app.post("/", (req, res) => {
 			accessToken: accessToken,
 		},
 	});
+	console.log(
+		process.env.EMAIL,
+		process.env.CLIENTID,
+		process.env.CLIENTKEY,
+		process.env.REFRESHTOKEN,
+		accessToken
+	);
 
 	let mailOptions = {
 		from: req.body.email,
