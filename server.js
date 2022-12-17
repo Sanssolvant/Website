@@ -7,11 +7,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 10000;
 
-const oAuth2Client = new google.auth.OAuth2(
-	process.env.CLIENTID,
-	process.env.CLIENTKEY,
-	process.env.REDIRECTURI
-);
+const oAuth2Client = new google.auth.OAuth2(process.env.CLIENTID, process.env.CLIENTKEY, process.env.REDIRECTURI);
 oAuth2Client.setCredentials({ refresh_token: process.env.REFRESHTOKEN });
 
 // Middleware
