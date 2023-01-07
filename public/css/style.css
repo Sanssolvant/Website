@@ -275,10 +275,11 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	z-index: 3;
+	position: fixed;
+	left: 0;
+	bottom: 10px;
 	width: 100%;
-	bottom: 20px;
-	position: absolute;
+	/* position: absolute; */
 }
 
 .footer a {
