@@ -4,6 +4,10 @@ function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showMenu() {
+	document.getElementById("menu-content").classList.toggle("show");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (e) {
 	if (!e.target.matches(".nav-bar")) {
@@ -74,8 +78,7 @@ const language = {
 			"Zurzeit habe ich mich noch nicht wirklich auf ein IT-Gebiet oder Programmiersprache spezialisiert. Die meiste Erfahrung habe ich aber auf den Gebieten Java und Webseiten Programmierung gesammelt. Bei einem kleinen Teil meiner Projekten, konnte ich auch schon etwas Wissen in MySQL Datenbanken aufbauen.",
 		übermich_text3: "Schauen Sie sich doch auf dem Register",
 		übermich_text4: "meine Projekte",
-		übermich_text5:
-			"um, dort finden Sie einige aktuelle geschriebene Projekte.",
+		übermich_text5: "um, dort finden Sie einige aktuelle geschriebene Projekte.",
 		datUnterschrift: "Uznach, 03. September. 2022",
 	},
 };
@@ -87,30 +90,23 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.en.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.en.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.en.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.en.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.en.myProjects;
 		//--------------------------------------
 		document.querySelector("#titel").textContent = language.en.header_über_mich;
 
 		document.querySelector(".das-bin-ich-title").textContent = language.en.hime;
 
-		document.querySelector(".übermich-text").textContent =
-			language.en.übermich_text;
+		document.querySelector(".übermich-text").textContent = language.en.übermich_text;
 
-		document.querySelector(".übermich-text2").textContent =
-			language.en.übermich_text2;
+		document.querySelector(".übermich-text2").textContent = language.en.übermich_text2;
 
-		document.querySelector(".übermich-text3").textContent =
-			language.en.übermich_text3;
+		document.querySelector(".übermich-text3").textContent = language.en.übermich_text3;
 
-		document.querySelector(".übermich-text4").textContent =
-			language.en.übermich_text4;
+		document.querySelector(".übermich-text4").textContent = language.en.übermich_text4;
 
-		document.querySelector(".übermich-text5").textContent =
-			language.en.übermich_text5;
+		document.querySelector(".übermich-text5").textContent = language.en.übermich_text5;
 
-		document.querySelector(".übermich-datum").textContent =
-			language.en.datUnterschrift;
+		document.querySelector(".übermich-datum").textContent = language.en.datUnterschrift;
 
 		localStorage.setItem("sprache", "en");
 	}
@@ -118,31 +114,24 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.de.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.de.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.de.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.de.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.de.myProjects;
 
 		// Oben auf jeder Seite gleich
 		document.querySelector("#titel").textContent = language.de.header_über_mich;
 
 		document.querySelector(".das-bin-ich-title").textContent = language.de.hime;
 
-		document.querySelector(".übermich-text").textContent =
-			language.de.übermich_text;
+		document.querySelector(".übermich-text").textContent = language.de.übermich_text;
 
-		document.querySelector(".übermich-text2").textContent =
-			language.de.übermich_text2;
+		document.querySelector(".übermich-text2").textContent = language.de.übermich_text2;
 
-		document.querySelector(".übermich-text3").textContent =
-			language.de.übermich_text3;
+		document.querySelector(".übermich-text3").textContent = language.de.übermich_text3;
 
-		document.querySelector(".übermich-text4").textContent =
-			language.de.übermich_text4;
+		document.querySelector(".übermich-text4").textContent = language.de.übermich_text4;
 
-		document.querySelector(".übermich-text5").textContent =
-			language.de.übermich_text5;
+		document.querySelector(".übermich-text5").textContent = language.de.übermich_text5;
 
-		document.querySelector(".übermich-datum").textContent =
-			language.de.datUnterschrift;
+		document.querySelector(".übermich-datum").textContent = language.de.datUnterschrift;
 
 		localStorage.setItem("sprache", "de");
 	}

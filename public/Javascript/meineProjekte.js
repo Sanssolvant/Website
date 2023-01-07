@@ -84,6 +84,10 @@ function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showMenu() {
+	document.getElementById("menu-content").classList.toggle("show");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (e) {
 	if (!e.target.matches(".nav-bar")) {
@@ -160,8 +164,7 @@ const language = {
 		MySql: "(Verbunden mit einer MySql-Datenbank)",
 		umrechner_text: "Ein Konverter von/nach Hexadezimal, Binär und Dezimal.",
 		zeitmesser_text: "Misst, wie lange ein Programm geöffnet ist.",
-		html_text:
-			"Die Website, auf der Sie sich gerade befinden, wurde von mir selbst erstellt,",
+		html_text: "Die Website, auf der Sie sich gerade befinden, wurde von mir selbst erstellt,",
 		standard_languages: "unter Verwendung der Standardsprachen",
 		html: "HTML/CSS/Javascript.",
 		viergewinnt_title: "Viergewinnt",
@@ -178,52 +181,35 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.en.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.en.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.en.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.en.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.en.myProjects;
 
 		// Oben auf jeder Seite gleich
-		document.querySelector("#titel").textContent =
-			language.en.header_meineProjekte;
+		document.querySelector("#titel").textContent = language.en.header_meineProjekte;
 
-		document.querySelectorAll(".meineProjekte-text-title")[0].textContent =
-			language.en.viergewinnt_title;
-		document.querySelectorAll(".meineProjekte-text-title")[1].textContent =
-			language.en.bankomat_title;
-		document.querySelectorAll(".meineProjekte-text-title")[2].textContent =
-			language.en.umrechner_title;
-		document.querySelectorAll(".meineProjekte-text-title")[3].textContent =
-			language.en.zeitmesser_title;
-		document.querySelectorAll(".meineProjekte-text-title")[4].textContent =
-			language.en.webseite_title;
+		document.querySelectorAll(".meineProjekte-text-title")[0].textContent = language.en.viergewinnt_title;
+		document.querySelectorAll(".meineProjekte-text-title")[1].textContent = language.en.bankomat_title;
+		document.querySelectorAll(".meineProjekte-text-title")[2].textContent = language.en.umrechner_title;
+		document.querySelectorAll(".meineProjekte-text-title")[3].textContent = language.en.zeitmesser_title;
+		document.querySelectorAll(".meineProjekte-text-title")[4].textContent = language.en.webseite_title;
 
-		document.querySelector(".viergewinnt-text").textContent =
-			language.en.viergewinnt_text;
+		document.querySelector(".viergewinnt-text").textContent = language.en.viergewinnt_text;
 		document.querySelector(".spieler").textContent = language.en.Players;
 
-		document.querySelectorAll(".herunterladen")[0].textContent =
-			language.en.Download;
-		document.querySelectorAll(".herunterladen")[1].textContent =
-			language.en.Download;
-		document.querySelectorAll(".herunterladen")[2].textContent =
-			language.en.Download;
-		document.querySelectorAll(".herunterladen")[3].textContent =
-			language.en.Download;
+		document.querySelectorAll(".herunterladen")[0].textContent = language.en.Download;
+		document.querySelectorAll(".herunterladen")[1].textContent = language.en.Download;
+		document.querySelectorAll(".herunterladen")[2].textContent = language.en.Download;
+		document.querySelectorAll(".herunterladen")[3].textContent = language.en.Download;
 
-		document.querySelector(".bankomat-text").textContent =
-			language.en.bankomat_text;
+		document.querySelector(".bankomat-text").textContent = language.en.bankomat_text;
 		document.querySelector(".mysql").textContent = language.en.MySql;
 
-		document.querySelector(".umrechner-text").textContent =
-			language.en.umrechner_text;
+		document.querySelector(".umrechner-text").textContent = language.en.umrechner_text;
 
-		document.querySelector(".zeitmesser-text").textContent =
-			language.en.zeitmesser_text;
+		document.querySelector(".zeitmesser-text").textContent = language.en.zeitmesser_text;
 
-		document.querySelector(".webseite-text").textContent =
-			language.en.html_text;
+		document.querySelector(".webseite-text").textContent = language.en.html_text;
 
-		document.querySelector(".standard-language").textContent =
-			language.en.standard_languages;
+		document.querySelector(".standard-language").textContent = language.en.standard_languages;
 
 		document.querySelector(".hsj").textContent = language.en.html;
 
@@ -235,46 +221,32 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.de.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.de.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.de.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.de.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.de.myProjects;
 
 		// Oben auf jeder Seite gleich
-		document.querySelector("#titel").textContent =
-			language.de.header_meineProjekte;
+		document.querySelector("#titel").textContent = language.de.header_meineProjekte;
 
-		document.querySelectorAll(".meineProjekte-text-title")[0].textContent =
-			language.de.viergewinnt_title;
-		document.querySelectorAll(".meineProjekte-text-title")[1].textContent =
-			language.de.bankomat_title;
-		document.querySelectorAll(".meineProjekte-text-title")[2].textContent =
-			language.de.umrechner_title;
-		document.querySelectorAll(".meineProjekte-text-title")[3].textContent =
-			language.de.zeitmesser_title;
-		document.querySelectorAll(".meineProjekte-text-title")[4].textContent =
-			language.de.webseite_title;
+		document.querySelectorAll(".meineProjekte-text-title")[0].textContent = language.de.viergewinnt_title;
+		document.querySelectorAll(".meineProjekte-text-title")[1].textContent = language.de.bankomat_title;
+		document.querySelectorAll(".meineProjekte-text-title")[2].textContent = language.de.umrechner_title;
+		document.querySelectorAll(".meineProjekte-text-title")[3].textContent = language.de.zeitmesser_title;
+		document.querySelectorAll(".meineProjekte-text-title")[4].textContent = language.de.webseite_title;
 
-		document.querySelector(".viergewinnt-text").textContent =
-			language.de.viergewinnt_text;
+		document.querySelector(".viergewinnt-text").textContent = language.de.viergewinnt_text;
 		document.querySelector(".spieler").textContent = language.de.Players;
 
-		document.querySelectorAll(".herunterladen").textContent =
-			language.de.Download;
+		document.querySelectorAll(".herunterladen").textContent = language.de.Download;
 
-		document.querySelector(".bankomat-text").textContent =
-			language.de.bankomat_text;
+		document.querySelector(".bankomat-text").textContent = language.de.bankomat_text;
 		document.querySelector(".mysql").textContent = language.de.MySql;
 
-		document.querySelector(".umrechner-text").textContent =
-			language.de.umrechner_text;
+		document.querySelector(".umrechner-text").textContent = language.de.umrechner_text;
 
-		document.querySelector(".zeitmesser-text").textContent =
-			language.de.zeitmesser_text;
+		document.querySelector(".zeitmesser-text").textContent = language.de.zeitmesser_text;
 
-		document.querySelector(".webseite-text").textContent =
-			language.de.html_text;
+		document.querySelector(".webseite-text").textContent = language.de.html_text;
 
-		document.querySelector(".standard-language").textContent =
-			language.de.standard_languages;
+		document.querySelector(".standard-language").textContent = language.de.standard_languages;
 
 		document.querySelector(".hsj").textContent = language.de.html;
 

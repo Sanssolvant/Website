@@ -4,6 +4,10 @@ function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showMenu() {
+	document.getElementById("menu-content").classList.toggle("show");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (e) {
 	if (!e.target.matches(".nav-bar")) {
@@ -97,34 +101,26 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.en.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.en.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.en.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.en.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.en.myProjects;
 
 		// Oben auf jeder Seite gleich
 		document.querySelector("#titel").textContent = language.en.header_kontakt;
 
-		document.querySelector(".contact-form h1").textContent =
-			language.en.contact_form;
+		document.querySelector(".contact-form h1").textContent = language.en.contact_form;
 
-		document.querySelectorAll(".text-box-name").placeholder =
-			language.en.YourName;
+		document.querySelectorAll(".text-box-name").placeholder = language.en.YourName;
 
-		document.querySelectorAll(".text-box-email").placeholder =
-			language.en.YourEmail;
+		document.querySelectorAll(".text-box-email").placeholder = language.en.YourEmail;
 
-		document.querySelector(".text-box-subject").placeholder =
-			language.en.Subject;
+		document.querySelector(".text-box-subject").placeholder = language.en.Subject;
 
-		document.querySelector(".text-box-message").placeholder =
-			language.en.Message;
+		document.querySelector(".text-box-message").placeholder = language.en.Message;
 
 		document.querySelector(".send-btn").textContent = language.en.Send;
 
-		document.querySelector("#alert-success").textContent =
-			language.en.alert_success;
+		document.querySelector("#alert-success").textContent = language.en.alert_success;
 
-		document.querySelector("#alert-error").textContent =
-			language.en.alert_error;
+		document.querySelector("#alert-error").textContent = language.en.alert_error;
 
 		// Variable über weiter Seiten schicken
 		localStorage.setItem("en", "en");
@@ -133,34 +129,26 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.de.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.de.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.de.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.de.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.de.myProjects;
 
 		// Oben auf jeder Seite gleich
 		document.querySelector("#titel").textContent = language.de.header_kontakt;
 
-		document.querySelector(".contact-form h1").textContent =
-			language.de.contact_form;
+		document.querySelector(".contact-form h1").textContent = language.de.contact_form;
 
-		document.querySelectorAll(".text-box-name").placeholder =
-			language.de.YourName;
+		document.querySelectorAll(".text-box-name").placeholder = language.de.YourName;
 
-		document.querySelectorAll(".text-box-email").placeholder =
-			language.de.YourEmail;
+		document.querySelectorAll(".text-box-email").placeholder = language.de.YourEmail;
 
-		document.querySelector(".text-box-subject").placeholder =
-			language.de.Subject;
+		document.querySelector(".text-box-subject").placeholder = language.de.Subject;
 
-		document.querySelector(".text-box-message").placeholder =
-			language.de.Message;
+		document.querySelector(".text-box-message").placeholder = language.de.Message;
 
 		document.querySelector(".send-btn").textContent = language.en.Send;
 
-		document.querySelector("#alert-success").textContent =
-			language.de.alert_success;
+		document.querySelector("#alert-success").textContent = language.de.alert_success;
 
-		document.querySelector("#alert-error").textContent =
-			language.de.alert_error;
+		document.querySelector("#alert-error").textContent = language.de.alert_error;
 
 		// Variable über weiter Seiten schicken
 		localStorage.setItem("de", "de");

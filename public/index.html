@@ -16,10 +16,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 		<link rel="shortcut icon" href="images/icon/mstile-310x310.png" />
 		<link rel="icon" href="images/icon/mstile-310x310.png" />
 	</head>
@@ -28,88 +25,84 @@
 		<header id="header">
 			<div class="logo-logo-name">
 				<a href="index.html">
-					<div id="logo">ZT</div>
+					<p id="logo">ZT</p>
 				</a>
 
 				<a href="index.html">
-					<div id="logo-name">
-						<span id="Zinedine">Zinedine</span> <br />Tomasella
-					</div>
+					<p id="logo-name">
+						Zinedine <br />
+						Tomasella
+					</p>
 				</a>
 			</div>
 
 			<div class="nav-bar-container">
-				<a href="index.html" class="nav-bar">Startseite</a>
-				<a href="kontakt.html" class="nav-bar">Kontakt</a>
-				<a href="übermich.html" class="nav-bar">Über mich</a>
-				<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				<div id="dropdown-navbar">
+					<a href="index.html" class="nav-bar">Startseite</a>
+					<a href="kontakt.html" class="nav-bar">Kontakt</a>
+					<a href="übermich.html" class="nav-bar">Über mich</a>
+					<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				</div>
+				<div id="dropdown-content-menu">
+					<button class="dropdown-button" type="button" onclick="showMenu()">
+						<i class="fa-solid fa-circle-chevron-down fa-xl" style="color: gray"></i>
+					</button>
+
+					<div id="menu-content" class="menu-content">
+						<li><a href="index.html" class="nav-bar">Startseite</a></li>
+						<li><a href="kontakt.html" class="nav-bar">Kontakt</a></li>
+						<li><a href="übermich.html" class="nav-bar">Über mich</a></li>
+						<li><a href="meineProjekte.html" class="nav-bar">meine Projekte </a></li>
+					</div>
+				</div>
 
 				<div class="dropdown">
-					<img
-						class="nav-bar"
-						src="images/icon/globus2.png"
-						alt="language"
-						onclick="myFunction()"
-					/>
+					<img class="nav-bar" src="images/icon/globus2.png" alt="language" onclick="myFunction()" />
 					<div class="dropdown-content" id="myDropdown">
 						<div class="first-language">
 							<a href="#de" data-reload onclick="reloadPage()">DE-Deutsch</a>
-							<img
-								class="germany"
-								src="images/icon/germany.png"
-								alt="Germany"
-							/>
+							<img class="germany" src="images/icon/germany.png" alt="Germany" />
 						</div>
 						<div class="second-language">
 							<a href="#en" data-reload onclick="reloadPage()">EN-English</a>
-							<img
-								class="united-kingdom"
-								src="images/icon/england.png"
-								alt="United Kingdom"
-							/>
+							<img class="united-kingdom" src="images/icon/england.png" alt="United Kingdom" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<div class="container">
-			<main id="main">
-				<div class="home-background">
+		<main id="main">
+			<div class="home-background">
+				<div id="welcome-wrapper">
 					<div class="welcome-page-text">
 						<spa class="welcome-hallo-text">Hallo und</spa>
 						<span class="welcome-home-text">Willkommen</span>
 						<br />
-						<p class="glad-home-text">
-							Ich bin froh, dass Sie meine Seite gefunden haben :)
-						</p>
+						<p class="glad-home-text">Ich bin froh, dass Sie meine Seite gefunden haben :)</p>
 					</div>
-					<div
-						class="home-img"
-						style="background-image: url(images/zt-home.jpg)"
-					></div>
-
-					<ul class="box-area">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+					<div class="home-img" style="background-image: url(images/zt-home.jpg)"></div>
 				</div>
-			</main>
 
-			<footer class="footer">
-				<a class="socials" href="https://github.com/Sanssolvant/Projects"
-					><i class="fa-brands fa-github" aria-hidden="true"></i>&nbsp;
-					Github</a
-				>
-				<div class="background">
-					<div class="copyright">© 2022 Zinedine Tomasella</div>
-				</div>
-			</footer>
-		</div>
+				<ul class="box-area">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<a class="socials" href="https://github.com/Sanssolvant/Projects"
+				><i class="fa-brands fa-github" aria-hidden="true"></i>&nbsp; Github</a
+			>
+			<div class="background">
+				<div class="copyright">© 2022 Zinedine Tomasella</div>
+			</div>
+		</footer>
 	</body>
 	<script src="Javascript/index.js"></script>
 </html>

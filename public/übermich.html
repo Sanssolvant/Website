@@ -16,10 +16,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 		<link rel="shortcut icon" href="images/icon/mstile-310x310.png" />
 		<link rel="icon" href="images/icon/mstile-310x310.png" />
 	</head>
@@ -28,45 +25,47 @@
 		<header id="header">
 			<div class="logo-logo-name">
 				<a href="index.html">
-					<div id="logo">ZT</div>
+					<p id="logo">ZT</p>
 				</a>
 
 				<a href="index.html">
-					<div id="logo-name">
-						<span id="Zinedine">Zinedine</span> <br />Tomasella
-					</div>
+					<p id="logo-name">
+						Zinedine <br />
+						Tomasella
+					</p>
 				</a>
 			</div>
 
 			<div class="nav-bar-container">
-				<a href="index.html" class="nav-bar">Startseite</a>
-				<a href="kontakt.html" class="nav-bar">Kontakt</a>
-				<a href="übermich.html" class="nav-bar">Über mich</a>
-				<a href="meineProjekte.html" class="nav-bar">meine Projekte</a>
+				<div id="dropdown-navbar">
+					<a href="index.html" class="nav-bar">Startseite</a>
+					<a href="kontakt.html" class="nav-bar">Kontakt</a>
+					<a href="übermich.html" class="nav-bar">Über mich</a>
+					<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				</div>
+				<div id="dropdown-content-menu">
+					<button class="dropdown-button" type="button" onclick="showMenu()">
+						<i class="fa-solid fa-circle-chevron-down fa-xl" style="color: gray"></i>
+					</button>
+
+					<div id="menu-content" class="menu-content">
+						<li><a href="index.html" class="nav-bar">Startseite</a></li>
+						<li><a href="kontakt.html" class="nav-bar">Kontakt</a></li>
+						<li><a href="übermich.html" class="nav-bar">Über mich</a></li>
+						<li><a href="meineProjekte.html" class="nav-bar">meine Projekte </a></li>
+					</div>
+				</div>
 
 				<div class="dropdown">
-					<img
-						class="nav-bar"
-						src="images/icon/globus2.png"
-						alt="language"
-						onclick="myFunction()"
-					/>
+					<img class="nav-bar" src="images/icon/globus2.png" alt="language" onclick="myFunction()" />
 					<div class="dropdown-content" id="myDropdown">
 						<div class="first-language">
 							<a href="#de" data-reload onclick="reloadPage()">DE-Deutsch</a>
-							<img
-								class="germany"
-								src="images/icon/germany.png"
-								alt="Germany"
-							/>
+							<img class="germany" src="images/icon/germany.png" alt="Germany" />
 						</div>
 						<div class="second-language">
-							<a href="#en" data-reload onclick="reloadPage()">EN-Englisch</a>
-							<img
-								class="united-kingdom"
-								src="images/icon/england.png"
-								alt="United Kingdom"
-							/>
+							<a href="#en" data-reload onclick="reloadPage()">EN-English</a>
+							<img class="united-kingdom" src="images/icon/england.png" alt="United Kingdom" />
 						</div>
 					</div>
 				</div>
@@ -79,39 +78,26 @@
 
 				<div class="text">
 					<span class="übermich-text"
-						>Geboren und aufgewachsen in Uznach, Schweiz, fand ich schnelles
-						Interesse für die Welt der Informatik. Schon in jungen Jahren
-						faszinierte mich dieses rechteckige Ding namens Computer, im Alter
-						von 18 Jahren konfigurierte und Baute ich meinen ersten zusammen.
-						Mit den Jahren richtete sich mein Augenmerk immer mehr in Richtung
-						des Programmierens, so sehr, dass ich nun Ende 2022 eine verkürzte
-						zweit Lehre für 2 Jahre als Berufsumsteiger Informatiker
-						Fachrichtung Applikationsentwicklung in Zürich startete.</span
+						>Geboren und aufgewachsen in Uznach, Schweiz, fand ich schnelles Interesse für die Welt der Informatik.
+						Schon in jungen Jahren faszinierte mich dieses rechteckige Ding namens Computer, im Alter von 18 Jahren
+						konfigurierte und Baute ich meinen ersten zusammen. Mit den Jahren richtete sich mein Augenmerk immer mehr
+						in Richtung des Programmierens, so sehr, dass ich nun Ende 2022 eine verkürzte zweit Lehre für 2 Jahre als
+						Berufsumsteiger Informatiker Fachrichtung Applikationsentwicklung in Zürich startete.</span
 					>
 					<hr />
 					<span class="übermich-text2"
-						>Zurzeit habe ich mich noch nicht wirklich auf ein IT-Gebiet oder
-						Programmiersprache spezialisiert. Die meiste Erfahrung habe ich aber
-						auf den Gebieten Java und Webseiten Programmierung gesammelt. Bei
-						einem kleinen Teil meiner Projekten, konnte ich auch schon etwas
-						Wissen in MySQL Datenbanken aufbauen.</span
+						>Zurzeit habe ich mich noch nicht wirklich auf ein IT-Gebiet oder Programmiersprache spezialisiert. Die
+						meiste Erfahrung habe ich aber auf den Gebieten Java und Webseiten Programmierung gesammelt. Bei einem
+						kleinen Teil meiner Projekten, konnte ich auch schon etwas Wissen in MySQL Datenbanken aufbauen.</span
 					>
 					<hr />
-					<span class="übermich-text3"
-						>Schauen Sie sich doch auf dem Register</span
-					>
+					<span class="übermich-text3">Schauen Sie sich doch auf dem Register</span>
 					<span class="übermich-text4">meine Projekte</span>
-					<span class="übermich-text5"
-						>um, dort finden Sie einige aktuelle geschriebene Projekte.</span
-					>
+					<span class="übermich-text5">um, dort finden Sie einige aktuelle geschriebene Projekte.</span>
 					<br />
 					<br />
 					<div class="übermich-datum">Uznach, 03. September. 2022</div>
-					<img
-						class="bitmoji-avatar"
-						src="images/zini-removebg-preview.png"
-						alt="My Bitmoji Avatar"
-					/>
+					<img class="bitmoji-avatar" src="images/zini-removebg-preview.png" alt="My Bitmoji Avatar" />
 				</div>
 			</div>
 		</main>

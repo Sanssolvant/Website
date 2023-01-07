@@ -16,10 +16,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 		<link rel="shortcut icon" href="images/icon/mstile-310x310.png" />
 		<link rel="icon" href="images/icon/mstile-310x310.png" />
 	</head>
@@ -28,45 +25,47 @@
 		<header id="header">
 			<div class="logo-logo-name">
 				<a href="index.html">
-					<div id="logo">ZT</div>
+					<p id="logo">ZT</p>
 				</a>
 
 				<a href="index.html">
-					<div id="logo-name">
-						<span id="Zinedine">Zinedine</span> <br />Tomasella
-					</div>
+					<p id="logo-name">
+						Zinedine <br />
+						Tomasella
+					</p>
 				</a>
 			</div>
 
 			<div class="nav-bar-container">
-				<a href="index.html" class="nav-bar">Startseite</a>
-				<a href="kontakt.html" class="nav-bar">Kontakt</a>
-				<a href="übermich.html" class="nav-bar">Über mich</a>
-				<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				<div id="dropdown-navbar">
+					<a href="index.html" class="nav-bar">Startseite</a>
+					<a href="kontakt.html" class="nav-bar">Kontakt</a>
+					<a href="übermich.html" class="nav-bar">Über mich</a>
+					<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				</div>
+				<div id="dropdown-content-menu">
+					<button class="dropdown-button" type="button" onclick="showMenu()">
+						<i class="fa-solid fa-circle-chevron-down fa-xl" style="color: gray"></i>
+					</button>
+
+					<div id="menu-content" class="menu-content">
+						<li><a href="index.html" class="nav-bar">Startseite</a></li>
+						<li><a href="kontakt.html" class="nav-bar">Kontakt</a></li>
+						<li><a href="übermich.html" class="nav-bar">Über mich</a></li>
+						<li><a href="meineProjekte.html" class="nav-bar">meine Projekte </a></li>
+					</div>
+				</div>
 
 				<div class="dropdown">
-					<img
-						class="nav-bar"
-						src="images/icon/globus2.png"
-						alt="language"
-						onclick="myFunction()"
-					/>
+					<img class="nav-bar" src="images/icon/globus2.png" alt="language" onclick="myFunction()" />
 					<div class="dropdown-content" id="myDropdown">
 						<div class="first-language">
 							<a href="#de" data-reload onclick="reloadPage()">DE-Deutsch</a>
-							<img
-								class="germany"
-								src="images/icon/germany.png"
-								alt="Germany"
-							/>
+							<img class="germany" src="images/icon/germany.png" alt="Germany" />
 						</div>
 						<div class="second-language">
 							<a href="#en" data-reload onclick="reloadPage()">EN-English</a>
-							<img
-								class="united-kingdom"
-								src="images/icon/england.png"
-								alt="United Kingdom"
-							/>
+							<img class="united-kingdom" src="images/icon/england.png" alt="United Kingdom" />
 						</div>
 					</div>
 				</div>
@@ -80,9 +79,7 @@
 						<h1 class="meineProjekte-text-title">Viergewinnt</h1>
 
 						<div class="meineProjekte-text">
-							<span class="viergewinnt-text">
-								Das klassische Viergewinnt Spiel.
-							</span>
+							<span class="viergewinnt-text"> Das klassische Viergewinnt Spiel. </span>
 							<br />
 							<span class="spieler">(2 Spieler)</span>
 						</div>
@@ -90,12 +87,6 @@
 						<a href="images/download/Vier-Gewinnt.jar" download>
 							<span class="herunterladen">Herunterladen</span>
 						</a>
-
-						<img
-							class="java-logo"
-							src="images/logos/java-neu.png"
-							alt="java logo"
-						/>
 					</div>
 				</div>
 
@@ -104,9 +95,7 @@
 						<h1 class="meineProjekte-text-title">Bankomat</h1>
 
 						<div class="meineProjekte-text">
-							<span class="bankomat-text"
-								>Eine Mischung aus Geldautomat und E-Banking.</span
-							>
+							<span class="bankomat-text">Eine Mischung aus Geldautomat und E-Banking.</span>
 							<br />
 							<span class="mysql">(Verbunden mit einer MySql-Datenbank)</span>
 						</div>
@@ -114,12 +103,6 @@
 						<a href="images/download/Bankomat.jar" download>
 							<span class="herunterladen">Herunterladen</span>
 						</a>
-
-						<img
-							class="java-logo"
-							src="images/logos/java-neu.png"
-							alt="java logo"
-						/>
 					</div>
 				</div>
 
@@ -128,9 +111,7 @@
 						<h1 class="meineProjekte-text-title">Umrechner</h1>
 
 						<div class="meineProjekte-text">
-							<span class="umrechner-text"
-								>Ein Konverter von/nach Hexadezimal, Binär und Dezimal.</span
-							>
+							<span class="umrechner-text">Ein Konverter von/nach Hexadezimal, Binär und Dezimal.</span>
 							<br />
 							<br />
 						</div>
@@ -138,12 +119,6 @@
 						<a href="images/download/Umrechner.jar" download>
 							<span class="herunterladen">Herunterladen</span>
 						</a>
-
-						<img
-							class="java-logo"
-							src="images/logos/java-neu.png"
-							alt="java logo"
-						/>
 					</div>
 				</div>
 
@@ -152,9 +127,7 @@
 						<h1 class="meineProjekte-text-title">Zeitmesser</h1>
 
 						<div class="meineProjekte-text">
-							<span class="zeitmesser-text"
-								>Misst, wie lange ein Programm geöffnet ist.</span
-							>
+							<span class="zeitmesser-text">Misst, wie lange ein Programm geöffnet ist.</span>
 							<br />
 							<br />
 						</div>
@@ -162,36 +135,21 @@
 						<a href="images/download/ProgrammDauerMessen.jar" download>
 							<span class="herunterladen">Herunterladen</span>
 						</a>
-
-						<img
-							class="java-logo"
-							src="images/logos/java-neu.png"
-							alt="java logo"
-						/>
 					</div>
 				</div>
 
 				<div class="slide">
-					<div class="info">
+					<div class="info" style="background-image: url('/public/images/logos/website-language.png')">
 						<h1 class="meineProjekte-text-title">Webseite</h1>
 
 						<div class="meineProjekte-text">
 							<span class="webseite-text"
-								>Die Website, auf der Sie sich gerade befinden, wurde von mir
-								selbst erstellt,</span
+								>Die Website, auf der Sie sich gerade befinden, wurde von mir selbst erstellt,</span
 							>
 							<br />
-							<span class="standard-language"
-								>unter Verwendung der Standardsprachen</span
-							>
+							<span class="standard-language">unter Verwendung der Standardsprachen</span>
 							<span class="hsj">HTML/CSS/Javascript und PHP.</span>
 						</div>
-
-						<img
-							class="java-logo"
-							src="images/logos/website-language.png"
-							alt="java logo"
-						/>
 					</div>
 				</div>
 

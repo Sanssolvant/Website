@@ -1,13 +1,18 @@
+"use strict";
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showMenu() {
+	document.getElementById("menu-content").classList.toggle("show");
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (e) {
 	if (!e.target.matches(".nav-bar")) {
-		var myDropdown = document.getElementById("myDropdown");
+		let myDropdown = document.getElementById("myDropdown");
 		if (myDropdown.classList.contains("show")) {
 			myDropdown.classList.remove("show");
 		}
@@ -73,15 +78,12 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.en.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.en.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.en.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.en.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.en.myProjects;
 
 		// Oben auf jeder Seite gleich
-		document.querySelector("#titel").textContent =
-			language.en.header_startseite;
+		document.querySelector("#titel").textContent = language.en.header_startseite;
 		document.querySelector(".welcome-hallo-text").textContent = language.en.hi;
-		document.querySelector(".welcome-home-text").textContent =
-			language.en.welcome;
+		document.querySelector(".welcome-home-text").textContent = language.en.welcome;
 		document.querySelector(".glad-home-text").textContent = language.en.glad;
 
 		localStorage.setItem("sprache", "en");
@@ -90,15 +92,12 @@ if (window.location.hash) {
 		document.querySelectorAll(".nav-bar")[0].textContent = language.de.Home;
 		document.querySelectorAll(".nav-bar")[1].textContent = language.de.Contact;
 		document.querySelectorAll(".nav-bar")[2].textContent = language.de.Aboutme;
-		document.querySelectorAll(".nav-bar")[3].textContent =
-			language.de.myProjects;
+		document.querySelectorAll(".nav-bar")[3].textContent = language.de.myProjects;
 
 		// Oben auf jeder Seite gleich
-		document.querySelector("#titel").textContent =
-			language.de.header_startseite;
+		document.querySelector("#titel").textContent = language.de.header_startseite;
 		document.querySelector(".welcome-hallo-text").innerHtml = language.de.hi;
-		document.querySelector(".welcome-home-text").textContent =
-			language.de.welcome;
+		document.querySelector(".welcome-home-text").textContent = language.de.welcome;
 		document.querySelector(".glad-home-text").textContent = language.de.glad;
 
 		localStorage.setItem("sprache", "de");

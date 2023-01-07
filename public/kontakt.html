@@ -25,19 +25,36 @@
 		<header id="header">
 			<div class="logo-logo-name">
 				<a href="index.html">
-					<div id="logo">ZT</div>
+					<p id="logo">ZT</p>
 				</a>
 
 				<a href="index.html">
-					<div id="logo-name"><span id="Zinedine">Zinedine</span> <br />Tomasella</div>
+					<p id="logo-name">
+						Zinedine <br />
+						Tomasella
+					</p>
 				</a>
 			</div>
 
 			<div class="nav-bar-container">
-				<a href="index.html" class="nav-bar">Startseite</a>
-				<a href="kontakt.html" class="nav-bar">Kontakt</a>
-				<a href="übermich.html" class="nav-bar">Über mich</a>
-				<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				<div id="dropdown-navbar">
+					<a href="index.html" class="nav-bar">Startseite</a>
+					<a href="kontakt.html" class="nav-bar">Kontakt</a>
+					<a href="übermich.html" class="nav-bar">Über mich</a>
+					<a href="meineProjekte.html" class="nav-bar">meine Projekte </a>
+				</div>
+				<div id="dropdown-content-menu">
+					<button class="dropdown-button" type="button" onclick="showMenu()">
+						<i class="fa-solid fa-circle-chevron-down fa-xl" style="color: gray"></i>
+					</button>
+
+					<div id="menu-content" class="menu-content">
+						<li><a href="index.html" class="nav-bar">Startseite</a></li>
+						<li><a href="kontakt.html" class="nav-bar">Kontakt</a></li>
+						<li><a href="übermich.html" class="nav-bar">Über mich</a></li>
+						<li><a href="meineProjekte.html" class="nav-bar">meine Projekte </a></li>
+					</div>
+				</div>
 
 				<div class="dropdown">
 					<img class="nav-bar" src="images/icon/globus2.png" alt="language" onclick="myFunction()" />
