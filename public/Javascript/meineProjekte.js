@@ -134,12 +134,16 @@ const language = {
 		zeitmesser_text: "Measures how long a program has been open.",
 		html_text: "The website you are currently on was created by myself,",
 		standard_languages: "using the standard languages",
-		html: "HTML/CSS/Javascript.",
+		zusatz: "(Website was written in 2 versions, with and without PHP)",
 		viergewinnt_title: "Connect Four",
 		bankomat_title: "ATM",
 		umrechner_title: "Converter",
 		zeitmesser_title: "Timer",
 		webseite_title: "Website",
+		expirydate_text: "Overview of your food with its name, quantity and expiry date,",
+		expirydate_info: "written with",
+		public: "(not public)",
+		ansehen: "View",
 	},
 	de: {
 		// Auf jeder Seite gleich
@@ -166,12 +170,16 @@ const language = {
 		zeitmesser_text: "Misst, wie lange ein Programm geöffnet ist.",
 		html_text: "Die Website, auf der Sie sich gerade befinden, wurde von mir selbst erstellt,",
 		standard_languages: "unter Verwendung der Standardsprachen",
-		html: "HTML/CSS/Javascript.",
+		zusatz: "(Webseite wurde in 2 Versionen geschrieben, mit und ohne PHP)",
 		viergewinnt_title: "Viergewinnt",
 		bankomat_title: "Bankomat",
 		umrechner_title: "Umrechner",
 		zeitmesser_title: "Zeitmesser",
 		webseite_title: "Webseite",
+		expirydate_text: "Übersicht ihrer Lebensmittel mit ihrem Namen, Menge und Ablaufdatum,",
+		expirydate_info: "geschrieben mit",
+		public: "(nicht Öffentlich)",
+		ansehen: "Ansehen",
 	},
 };
 
@@ -210,8 +218,12 @@ if (window.location.hash) {
 		document.querySelector(".webseite-text").textContent = language.en.html_text;
 
 		document.querySelector(".standard-language").textContent = language.en.standard_languages;
+		document.querySelector(".zusatz").textContent = language.en.zusatz;
 
-		document.querySelector(".hsj").textContent = language.en.html;
+		document.querySelector(".expirydate-text").textContent = language.en.expirydate_text;
+		document.querySelector(".expirydate-info").textContent = language.en.expirydate_info;
+		document.querySelector(".public").textContent = language.en.public;
+		document.querySelector(".ansehen").textContent = language.en.ansehen;
 
 		// Variable über weiter Seiten schicken
 		localStorage.setItem("sprache", "en");
@@ -247,8 +259,12 @@ if (window.location.hash) {
 		document.querySelector(".webseite-text").textContent = language.de.html_text;
 
 		document.querySelector(".standard-language").textContent = language.de.standard_languages;
+		document.querySelector(".zusatz").textContent = language.de.zusatz;
 
-		document.querySelector(".hsj").textContent = language.de.html;
+		document.querySelector(".expirydate-text").textContent = language.de.expirydate_text;
+		document.querySelector(".expirydate-info").textContent = language.de.expirydate_info;
+		document.querySelector(".public").textContent = language.de.public;
+		document.querySelector(".ansehen").textContent = language.de.ansehen;
 
 		// Variable über weiter Seiten schicken
 		localStorage.setItem("sprache", "de");

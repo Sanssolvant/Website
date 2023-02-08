@@ -7,6 +7,13 @@ body {
 	box-sizing: border-box;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: lightseagreen;
+}
+
 #main {
 	z-index: 2;
 	overflow-x: hidden;
@@ -652,6 +659,14 @@ body {
 	margin-top: 40vh;
 }
 
+.herunterladen {
+	font-weight: bold;
+}
+
+.ansehen {
+	font-weight: bold;
+}
+
 .hsj {
 	color: lightseagreen;
 }
@@ -815,9 +830,32 @@ body {
 	}
 }
 
+/* Expirydate.html*/
+
+#grid {
+	margin: 5% 20px auto 20px;
+}
+
+#gridwrapper {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	margin-top: 20px;
+	gap: 20px;
+	text-align: center;
+}
+
+#gridwrapper img {
+	height: 300px;
+	width: 100%;
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
 .show {
 	display: block;
 }
+
 /* index2 Main */
 /*
 .portfolio-items-wrapper {
