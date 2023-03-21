@@ -381,7 +381,7 @@ h1 {
 
 .cv:hover {
 	background: rgb(21, 115, 110);
-	box-shadow: inset 140px 0 0 0 rgb(131, 210, 131);
+	box-shadow: inset 200px 0 0 0 rgb(131, 210, 131);
 	cursor: pointer;
 }
 
