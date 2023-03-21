@@ -379,6 +379,12 @@ h1 {
 	padding: 10px;
 }
 
+.cv:hover {
+	background: rgb(21, 115, 110);
+	box-shadow: inset 140px 0 0 0 rgb(131, 210, 131);
+	cursor: pointer;
+}
+
 .bitmoji-avatar {
 	float: left;
 	width: 250px;
