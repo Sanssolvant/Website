@@ -54,6 +54,7 @@ const language = {
 		übermich_text4: "my projects,",
 		übermich_text5: "there you will find some current written projects.",
 		datUnterschrift: "Uznach, 03. September. 2022",
+		lebenslauf: "Download",
 	},
 	de: {
 		// Auf jeder Seite gleich
@@ -80,6 +81,7 @@ const language = {
 		übermich_text4: "meine Projekte",
 		übermich_text5: "um, dort finden Sie einige aktuelle geschriebene Projekte.",
 		datUnterschrift: "Uznach, 03. September. 2022",
+		lebenslauf: "Herunterladen",
 	},
 };
 
@@ -108,6 +110,8 @@ if (window.location.hash) {
 
 		document.querySelector(".übermich-datum").textContent = language.en.datUnterschrift;
 
+		document.querySelector(".cv").textContent = language.en.lebenslauf;
+
 		localStorage.setItem("sprache", "en");
 	}
 	if (window.location.hash === "#de") {
@@ -132,6 +136,8 @@ if (window.location.hash) {
 		document.querySelector(".übermich-text5").textContent = language.de.übermich_text5;
 
 		document.querySelector(".übermich-datum").textContent = language.de.datUnterschrift;
+
+		document.querySelector(".cv").textContent = language.de.lebenslauf;
 
 		localStorage.setItem("sprache", "de");
 	}
