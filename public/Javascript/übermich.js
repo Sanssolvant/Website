@@ -110,7 +110,7 @@ if (window.location.hash) {
 
 		document.querySelector(".übermich-datum").textContent = language.en.datUnterschrift;
 
-		document.querySelector(".cv").textContent = language.en.lebenslauf;
+		/* document.querySelector(".cv").textContent = language.en.lebenslauf; */
 
 		localStorage.setItem("sprache", "en");
 	}
@@ -137,7 +137,7 @@ if (window.location.hash) {
 
 		document.querySelector(".übermich-datum").textContent = language.de.datUnterschrift;
 
-		document.querySelector(".cv").textContent = language.de.lebenslauf;
+		/* 	document.querySelector(".cv").textContent = language.de.lebenslauf; */
 
 		localStorage.setItem("sprache", "de");
 	}
